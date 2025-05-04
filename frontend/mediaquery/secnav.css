@@ -1,0 +1,7 @@
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .menu-items {
+        margin-right: 10%;
+        align-items: center;
+    }
+}

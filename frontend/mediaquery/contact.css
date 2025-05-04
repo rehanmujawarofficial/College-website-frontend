@@ -1,0 +1,14 @@
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-details, .map-container {
+        width: 88%; 
+        text-align: center;
+    }
+    iframe {
+        height: 250px; 
+    }
+}

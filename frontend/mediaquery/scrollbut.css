@@ -1,0 +1,8 @@
+@media (max-width: 700px){
+.scroll-btn{
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 30px;
+}
+}

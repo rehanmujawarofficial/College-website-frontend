@@ -1,0 +1,12 @@
+@media (max-width: 700px) {
+/*cousses*/
+.his-col{
+    margin: 10px 10px;
+}
+.row{
+    flex-direction: column;  
+}   
+.his-col:hover{
+    box-shadow: 3px 3px 15px 0.5px rgba(255, 0, 0, 0.486);
+}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>GOVT POLITECHNIC COLLE MUDHOL</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../mediaquery/navebar.css">
+    <link rel="stylesheet" href="../styles/presentpage.css">
+</head>
+
+<body>
+    <section class="header"> 
+        <!--nav bar-->   
+        <nav>
+            <div>
+                <a href="../html/index.html"><img src="../images/logo.png" id="logo-img"></a>
+            </div>
+            <h2>GPTMUDHOL</h2>
+            <div class="nav-links" id="navLinks">
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/staff_informetion.html">Staff informetion</a></li>
+                    <li><a href="../html/courses.html">Courses</a></li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="./news_or_message.html">News OR Message</a></li>
+                    <li><a id="page" href="">Login</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+    <!-- Login Section -->
+    <section>
+        <div class="login-container">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <button onclick="login()">Login</button>
+            <p class="message" id="message"></p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../scripts/menubut.js"></script>
+    <script src="../../backend/scripts/login.js"></script>
+</body>
+</html>

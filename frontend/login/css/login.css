@@ -1,0 +1,94 @@
+/* Responsive Login Container */
+.login-container {
+    margin-top: 80px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 4vw;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 5vh auto;
+}
+
+/* Adjust Heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 2vw;
+    color: #333;
+    font-weight: 600;
+    font-size: clamp(22px, 2vw, 28px);
+}
+
+/* Responsive Form */
+.form-group {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5vw;
+    color: #555;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 93%;
+    padding: 1vw;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+/* Flexible Button */
+button {
+    width: 100%;
+    padding: 1vw;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0047ab, #4a90e2);
+    color: white;
+    font-size: clamp(14px, 1.8vw, 16px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #003c8f, #3a80d2);
+    transform: translateY(-2px);
+}
+
+/* Error Message */
+.message {
+    text-align: center;
+    margin-top: 2vh;
+    color: #ff3333;
+    font-size: clamp(12px, 1.5vw, 14px);
+    min-height: 20px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .login-container {
+        margin-top: 35% !important;
+        padding: 5vw;
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .form-group input,
+    button {
+        padding: 3vw;
+    }
+}

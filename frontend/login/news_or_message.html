@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>GOVT POLITECHNIC COLLE MUDHOL</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="./css/news_or_message.css">
+    <link rel="stylesheet" href="../mediaquery/navebar.css">
+    <link rel="stylesheet" href="../styles/presentpage.css">
+</head>
+
+<body>
+    <section class="header"> 
+        <!--nav bar-->   
+        <nav>
+            <div>
+                <a href="../html/index.html"><img src="../images/logo.png" id="logo-img"></a>
+            </div>
+            <h2>GPTMUDHOL</h2>
+            <div class="nav-links" id="navLinks">
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>  
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/staff_informetion.html">Staff informetion</a></li>
+                    <li><a href="../html/courses.html">Courses</a></li>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a id="page" href="">News OR Message</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="box_header">
+                <h2>letest Update</h2>
+                <div class="user-info">
+                    <span class="username" id="usernameDisplay"></span>
+                    <button id="authButton" class="login-btn" onclick="handleAuth()">Login</button>
+                </div>
+            </div>
+            
+            <textarea id="sharedText" placeholder="Type here..."></textarea>
+            <button id="saveButton" class="save-btn" onclick="saveText()">Save</button>
+            
+            <p class="status" id="status"></p>
+        </div>
+    </section>
+    
+        <!--Javascript is Start-->
+        <script src="../../backend/scripts/news_and_msg.js"></script>
+        <script src="../scripts/menubut.js"></script>

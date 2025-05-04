@@ -1,0 +1,25 @@
+/* Media query for responsive */
+@media (max-width: 700px) {
+    html {
+        scroll-behavior: smooth; 
+      }
+    *{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .course-col{
+        margin: 10px 10px;
+    }
+    .row{
+        flex-direction: column;  
+    }   
+    .course-col:hover{
+        box-shadow: 3px 3px 15px 0.5px rgba(255, 0, 0, 0.486);
+    }
+       
+    .Mission_and_Vision-col img:hover{
+        box-shadow:none;
+    }
+}
+/* Media query is Close*/
